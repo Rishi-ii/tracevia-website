@@ -176,5 +176,31 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     revealElements.forEach(el => el.classList.add('revealed'));
   }
+
+  // 6. Mobile Dropdown Toggle for accordion menu
+  const dropdownTrigger = document.querySelector('.dropdown-trigger');
+  const navDropdown = document.querySelector('.nav-item-dropdown');
+  const chevronIcon = dropdownTrigger ? dropdownTrigger.querySelector('.bx-chevron-down') : null;
+  
+  if (dropdownTrigger && navDropdown) {
+    dropdownTrigger.addEventListener('click', (e) => {
+      // Toggle dropdown on mobile viewports
+      if (window.innerWidth < 768) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        navDropdown.classList.toggle('mobile-dropdown-active');
+        
+        // Rotate chevron icon
+        if (chevronIcon) {
+          if (navDropdown.classList.contains('mobile-dropdown-active')) {
+            chevronIcon.style.transform = 'rotate(180deg)';
+          } else {
+            chevronIcon.style.transform = 'rotate(0deg)';
+          }
+        }
+      }
+    });
+  }
 });
 

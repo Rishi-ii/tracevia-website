@@ -541,6 +541,7 @@ h4 {
   }
 
   .nav-dropdown-menu {
+    display: none !important; /* Hidden on mobile by default */
     position: static !important;
     transform: none !important;
     opacity: 1 !important;
@@ -552,6 +553,9 @@ h4 {
     width: 100% !important;
     padding: 0 !important;
     margin-top: 8px !important;
+  }
+  
+  .nav-item-dropdown.mobile-dropdown-active .nav-dropdown-menu {
     display: flex !important;
     flex-direction: column !important;
     gap: 4px !important;
@@ -563,7 +567,7 @@ h4 {
   }
 
   .dropdown-trigger i {
-    transform: rotate(0deg) !important;
+    transition: transform 0.3s ease !important;
   }
   
   .glass-header.scrolled nav.nav-links a:not(.btn) {
