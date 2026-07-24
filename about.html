@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us | Tracevia Forensics Services Private Limited</title>
-  <meta name="description" content="Learn about Tracevia Forensics Services Private Limited. Our vision, mission, origin philosophy, core values, and expert team.">
+  <meta name="description"
+    content="Learn about Tracevia Forensics Services Private Limited. Our vision, mission, origin philosophy, core values, and expert team.">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  
+
   <!-- Google Fonts & Boxicons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
   <!-- Tailwind CSS Play CDN -->
@@ -56,47 +60,77 @@
   <!-- Global Stylesheet -->
   <link rel="stylesheet" href="css/styles.css?v=1.1.1">
 </head>
+
 <body class="bg-primary text-dark font-sans leading-relaxed">
 
   <!-- Scroll Progress Bar -->
   <div class="scroll-progress-bar"></div>
 
   <!-- Header -->
-  <header class="glass-header w-full fixed top-0 left-0 z-[1000] border-b border-[#0b192c]/5 bg-white/85 backdrop-blur-md transition-all duration-300">
+  <header
+    class="glass-header w-full fixed top-0 left-0 z-[1000] border-b border-[#0b192c]/5 bg-white/85 backdrop-blur-md transition-all duration-300">
     <div class="tracevia-container flex items-center justify-between h-20 transition-all duration-300 navbar-wrapper">
       <a href="index.html" class="logo flex items-center no-underline">
-        <img src="assets/logo.jpg" alt="Tracevia Forensics Services Private Limited" class="logo-image h-[52px] rounded-sm border border-[#0b192c]/10 object-contain transition-all duration-300">
+        <img src="assets/logo.jpg" alt="Tracevia Forensics Services Private Limited"
+          class="logo-image h-[52px] rounded-sm border border-[#0b192c]/10 object-contain transition-all duration-300">
       </a>
 
       <!-- Navigation Links -->
       <nav class="nav-links flex items-center gap-8 md:flex-row flex-col">
-        <a href="index.html" class="font-outfit text-base font-semibold text-text-medium hover:text-navy-deep no-underline transition-all relative">Home</a>
-        <a href="about.html" class="active font-outfit text-base font-semibold text-navy-medium hover:text-navy-deep no-underline transition-all relative">About Us</a>
-        
+        <a href="index.html"
+          class="font-outfit text-base font-semibold text-text-medium hover:text-navy-deep no-underline transition-all relative">Home</a>
+        <a href="about.html"
+          class="active font-outfit text-base font-semibold text-navy-medium hover:text-navy-deep no-underline transition-all relative">About
+          Us</a>
+
         <!-- Services Dropdown -->
         <div class="nav-dropdown-wrapper relative flex items-center gap-1 md:flex-row flex-row">
-          <a href="services.html" class="font-outfit text-base font-semibold text-text-medium hover:text-navy-deep no-underline transition-all cursor-pointer">Services</a>
-          <button class="dropdown-trigger-icon bg-transparent border-none cursor-pointer p-0 text-text-medium hover:text-navy-deep transition-all flex items-center justify-center" aria-label="Toggle Services Menu">
+          <a href="services.html"
+            class="font-outfit text-base font-semibold text-text-medium hover:text-navy-deep no-underline transition-all cursor-pointer">Services</a>
+          <button
+            class="dropdown-trigger-icon bg-transparent border-none cursor-pointer p-0 text-text-medium hover:text-navy-deep transition-all flex items-center justify-center"
+            aria-label="Toggle Services Menu">
             <i class='bx bx-chevron-down dropdown-arrow text-sm transition-all duration-200'></i>
           </button>
-          <div class="nav-dropdown-menu absolute top-full left-1/2 -translate-x-1/2 translate-y-3 w-[270px] bg-white border border-[#0b192c]/5 rounded-sm shadow-lg flex flex-col py-3 opacity-0 invisible transition-all duration-300 pointer-events-none z-[1002]">
-            <a href="services/motor-property.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-shield-quarter text-accent-cyan text-lg'></i> Motor & Property Claims</a>
-            <a href="services/accident-reconstruction.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-car text-accent-cyan text-lg'></i> Accident Reconstruction</a>
-            <a href="services/document-examination.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-file-find text-accent-cyan text-lg'></i> Document Examination</a>
-            <a href="services/fingerprint-analysis.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-fingerprint text-accent-cyan text-lg'></i> Fingerprint Analysis</a>
-            <a href="services/audio-video.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-volume-low text-accent-cyan text-lg'></i> Audio Video Auth</a>
-            <a href="services/forensic-accounting.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-wallet text-accent-cyan text-lg'></i> Forensic Accounting</a>
-            <a href="services/crime-scene.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-search-alt text-accent-cyan text-lg'></i> Crime Scene Forensic</a>
-            <a href="services/forensic-education.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-book-open text-accent-cyan text-lg'></i> Education & Training</a>
+          <div
+            class="nav-dropdown-menu absolute top-full left-1/2 -translate-x-1/2 translate-y-3 w-[270px] bg-white border border-[#0b192c]/5 rounded-sm shadow-lg flex flex-col py-3 opacity-0 invisible transition-all duration-300 pointer-events-none z-[1002]">
+            <a href="services/motor-property.html"
+              class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i
+                class='bx bx-shield-quarter text-accent-cyan text-lg'></i> Motor & Property Claims</a>
+            <a href="services/accident-reconstruction.html"
+              class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i
+                class='bx bx-car text-accent-cyan text-lg'></i> Accident Reconstruction</a>
+            <a href="services/document-examination.html"
+              class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i
+                class='bx bx-file-find text-accent-cyan text-lg'></i> Document Examination</a>
+            <a href="services/fingerprint-analysis.html"
+              class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i
+                class='bx bx-fingerprint text-accent-cyan text-lg'></i> Fingerprint Analysis</a>
+            <a href="services/audio-video.html"
+              class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i
+                class='bx bx-volume-low text-accent-cyan text-lg'></i> Audio Video Auth</a>
+            <a href="services/forensic-accounting.html"
+              class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i
+                class='bx bx-wallet text-accent-cyan text-lg'></i> Forensic Accounting</a>
+            <a href="services/crime-scene.html"
+              class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i
+                class='bx bx-search-alt text-accent-cyan text-lg'></i> Crime Scene Forensic</a>
+            <a href="services/forensic-education.html"
+              class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i
+                class='bx bx-book-open text-accent-cyan text-lg'></i> Education & Training</a>
           </div>
         </div>
 
-        <a href="contact.html" class="font-outfit text-base font-semibold text-text-medium hover:text-navy-deep no-underline transition-all relative">Inquiries & Contact</a>
+        <a href="contact.html"
+          class="font-outfit text-base font-semibold text-text-medium hover:text-navy-deep no-underline transition-all relative">Inquiries
+          & Contact</a>
 
       </nav>
 
       <!-- Mobile Toggle -->
-      <button class="mobile-toggle block md:hidden bg-none border-none text-navy-deep text-3xl cursor-pointer transition-all z-[1001]" aria-label="Toggle Navigation">
+      <button
+        class="mobile-toggle block md:hidden bg-none border-none text-navy-deep text-3xl cursor-pointer transition-all z-[1001]"
+        aria-label="Toggle Navigation">
         <i class='bx bx-menu'></i>
       </button>
     </div>
@@ -104,13 +138,19 @@
 
   <!-- About Hero Banner -->
   <section class="about-hero relative h-80 flex items-center overflow-hidden bg-navy-deep p-0 mt-0 animate-fade-up">
-    <div class="about-hero-overlay absolute top-0 left-0 w-full h-full bg-gradient-to-br from-navy-deep/95 to-navy-medium/85 z-[1]"></div>
+    <div
+      class="about-hero-overlay absolute top-0 left-0 w-full h-full bg-gradient-to-br from-navy-deep/95 to-navy-medium/85 z-[1]">
+    </div>
     <div class="about-hero-grid absolute top-0 left-0 w-full h-full z-[2]"></div>
     <div class="tracevia-container relative z-[3] w-full text-center">
-      <span class="section-tag inline-block font-outfit text-sm font-bold uppercase text-accent-cyan bg-accent-cyan/10 px-4 py-1.5 rounded-full mb-4 tracking-widest">ABOUT TRACEVIA</span>
-      <h1 class="about-hero-title font-outfit text-4xl font-extrabold text-white my-4">Where Every Trace Tells a Story</h1>
+      <span
+        class="section-tag inline-block font-outfit text-sm font-bold uppercase text-accent-cyan bg-accent-cyan/10 px-4 py-1.5 rounded-full mb-4 tracking-widest">ABOUT
+        TRACEVIA</span>
+      <h1 class="about-hero-title font-outfit text-4xl font-extrabold text-white my-4">Where Every Trace Tells a Story
+      </h1>
       <p class="about-hero-subtitle text-base text-text-white-muted leading-relaxed max-w-[750px] mx-auto">
-        At Tracevia Forensics Services Private Limited, we believe that every incident leaves behind a trace, and within every trace lies the truth.
+        At Tracevia Forensics Services Private Limited, we believe that every incident leaves behind a trace, and within
+        every trace lies the truth.
       </p>
     </div>
   </section>
@@ -118,86 +158,115 @@
   <!-- Origin & Core Story Section -->
   <section class="about-story-section py-20 bg-white">
     <div class="tracevia-container grid grid-cols-1 lg:grid-cols-[1.25fr_1fr] gap-16 items-start">
-      
+
       <!-- Left side: Narrative content -->
       <div class="story-left animate-fade-up flex flex-col gap-6">
-        <span class="sub-tag block font-outfit text-xs font-bold text-accent-cyan tracking-widest uppercase">OUR ORIGIN & PHILOSOPHY</span>
+        <span class="sub-tag block font-outfit text-xs font-bold text-accent-cyan tracking-widest uppercase">OUR ORIGIN
+          & PHILOSOPHY</span>
         <h2 class="font-outfit text-4xl text-navy-deep mb-2">Discovering Truth Through Science</h2>
-        
+
         <p class="text-base text-text-medium leading-relaxed">
-          The name <strong>Tracevia</strong> reflects the philosophy that drives our work. <strong>"Trace"</strong> represents the physical, digital, financial, and documentary evidence left behind during an incident or crime. <strong>"Via"</strong>, meaning through, signifies our scientific approach of uncovering facts through the traces that evidence leaves. Together, Tracevia represents our commitment to discovering the truth through forensic science and evidence-based investigation.
-        </p>
-        
-        <p class="text-base text-text-medium leading-relaxed">
-          We are a multidisciplinary forensic and investigation company dedicated to delivering accurate, unbiased, and scientifically supported solutions to insurance companies, corporate organisations, legal professionals, government agencies, law enforcement authorities, and individual clients.
+          The name <strong>Tracevia</strong> reflects the philosophy that drives our work. <strong>"Trace"</strong>
+          represents the physical, digital, financial, and documentary evidence left behind during an incident or crime.
+          <strong>"Via"</strong>, meaning through, signifies our scientific approach of uncovering facts through the
+          traces that evidence leaves. Together, Tracevia represents our commitment to discovering the truth through
+          forensic science and evidence-based investigation.
         </p>
 
         <p class="text-base text-text-medium leading-relaxed">
-          Our expertise spans questioned document examination, fingerprint analysis, audio and video authentication, forensic accounting and auditing, crime scene investigation, professional forensic education and training, and extends to motor and property claim investigations and accident reconstruction. Every investigation is conducted with the highest standards of professionalism, integrity, confidentiality, and scientific precision.
+          We are a multidisciplinary forensic and investigation company dedicated to delivering accurate, unbiased, and
+          scientifically supported solutions to insurance companies, corporate organisations, legal professionals,
+          government agencies, law enforcement authorities, and individual clients.
         </p>
 
         <p class="text-base text-text-medium leading-relaxed">
-          At Tracevia Forensics Services Private Limited, we understand that decisions made on the basis of forensic evidence can have significant legal, financial, and social implications. That is why our experts follow internationally accepted forensic methodologies, advanced analytical techniques, and stringent quality standards to ensure that every opinion we provide is objective, reliable, and legally defensible.
+          Our expertise spans questioned document examination, fingerprint analysis, audio and video authentication,
+          forensic accounting and auditing, crime scene investigation, professional forensic education and training, and
+          extends to motor and property claim investigations and accident reconstruction. Every investigation is
+          conducted with the highest standards of professionalism, integrity, confidentiality, and scientific precision.
         </p>
 
         <p class="text-base text-text-medium leading-relaxed">
-          We don't rely on assumptions—we rely on evidence. From reconstructing complex accidents and detecting insurance fraud to authenticating documents and analysing digital evidence, our mission is to uncover facts that stand up to scrutiny in courts, investigations, and corporate decision-making.
+          At Tracevia Forensics Services Private Limited, we understand that decisions made on the basis of forensic
+          evidence can have significant legal, financial, and social implications. That is why our experts follow
+          internationally accepted forensic methodologies, advanced analytical techniques, and stringent quality
+          standards to ensure that every opinion we provide is objective, reliable, and legally defensible.
+        </p>
+
+        <p class="text-base text-text-medium leading-relaxed">
+          We don't rely on assumptions—we rely on evidence. From reconstructing complex accidents and detecting
+          insurance fraud to authenticating documents and analysing digital evidence, our mission is to uncover facts
+          that stand up to scrutiny in courts, investigations, and corporate decision-making.
         </p>
       </div>
 
       <!-- Right side: Core Values grid -->
-      <div class="story-right flex flex-col gap-6 animate-fade-in bg-primary/40 p-8 border border-[#0b192c]/5 rounded-md">
-        <h3 class="font-outfit text-2xl font-bold text-navy-deep mb-4 border-b border-dashed border-[#0b192c]/10 pb-3 flex items-center gap-2">
+      <div
+        class="story-right flex flex-col gap-6 animate-fade-in bg-primary/40 p-8 border border-[#0b192c]/5 rounded-md">
+        <h3
+          class="font-outfit text-2xl font-bold text-navy-deep mb-4 border-b border-dashed border-[#0b192c]/10 pb-3 flex items-center gap-2">
           <i class='bx bx-award text-accent-cyan'></i> Our Core Values
         </h3>
-        
+
         <div class="grid grid-cols-1 gap-5">
-          
-          <div class="value-item flex gap-4 bg-white p-5 rounded-sm border border-[#0b192c]/5 shadow-sm transition-all hover:border-accent-cyan/20">
+
+          <div
+            class="value-item flex gap-4 bg-white p-5 rounded-sm border border-[#0b192c]/5 shadow-sm transition-all hover:border-accent-cyan/20">
             <i class='bx bx-check-shield text-2xl text-accent-cyan mt-1 flex-shrink-0'></i>
             <div>
               <h4 class="font-outfit font-bold text-navy-deep text-base mb-1">Integrity</h4>
-              <p class="text-xs text-text-medium leading-relaxed">We remain impartial, ethical, and committed to presenting facts exactly as they are.</p>
+              <p class="text-xs text-text-medium leading-relaxed">We remain impartial, ethical, and committed to
+                presenting facts exactly as they are.</p>
             </div>
           </div>
 
-          <div class="value-item flex gap-4 bg-white p-5 rounded-sm border border-[#0b192c]/5 shadow-sm transition-all hover:border-accent-cyan/20">
+          <div
+            class="value-item flex gap-4 bg-white p-5 rounded-sm border border-[#0b192c]/5 shadow-sm transition-all hover:border-accent-cyan/20">
             <i class='bx bx-analyse text-2xl text-accent-cyan mt-1 flex-shrink-0'></i>
             <div>
               <h4 class="font-outfit font-bold text-navy-deep text-base mb-1">Scientific Excellence</h4>
-              <p class="text-xs text-text-medium leading-relaxed">Our conclusions are based on validated forensic principles, recognised methodologies, and objective analysis.</p>
+              <p class="text-xs text-text-medium leading-relaxed">Our conclusions are based on validated forensic
+                principles, recognised methodologies, and objective analysis.</p>
             </div>
           </div>
 
-          <div class="value-item flex gap-4 bg-white p-5 rounded-sm border border-[#0b192c]/5 shadow-sm transition-all hover:border-accent-cyan/20">
+          <div
+            class="value-item flex gap-4 bg-white p-5 rounded-sm border border-[#0b192c]/5 shadow-sm transition-all hover:border-accent-cyan/20">
             <i class='bx bx-lock-alt text-2xl text-accent-cyan mt-1 flex-shrink-0'></i>
             <div>
               <h4 class="font-outfit font-bold text-navy-deep text-base mb-1">Confidentiality</h4>
-              <p class="text-xs text-text-medium leading-relaxed">Every investigation is handled with complete discretion, protecting the privacy and interests of our clients.</p>
+              <p class="text-xs text-text-medium leading-relaxed">Every investigation is handled with complete
+                discretion, protecting the privacy and interests of our clients.</p>
             </div>
           </div>
 
-          <div class="value-item flex gap-4 bg-white p-5 rounded-sm border border-[#0b192c]/5 shadow-sm transition-all hover:border-accent-cyan/20">
+          <div
+            class="value-item flex gap-4 bg-white p-5 rounded-sm border border-[#0b192c]/5 shadow-sm transition-all hover:border-accent-cyan/20">
             <i class='bx bx-target-lock text-2xl text-accent-cyan mt-1 flex-shrink-0'></i>
             <div>
               <h4 class="font-outfit font-bold text-navy-deep text-base mb-1">Accuracy</h4>
-              <p class="text-xs text-text-medium leading-relaxed">Precision and attention to detail define every examination, analysis, and report we produce.</p>
+              <p class="text-xs text-text-medium leading-relaxed">Precision and attention to detail define every
+                examination, analysis, and report we produce.</p>
             </div>
           </div>
 
-          <div class="value-item flex gap-4 bg-white p-5 rounded-sm border border-[#0b192c]/5 shadow-sm transition-all hover:border-accent-cyan/20">
+          <div
+            class="value-item flex gap-4 bg-white p-5 rounded-sm border border-[#0b192c]/5 shadow-sm transition-all hover:border-accent-cyan/20">
             <i class='bx bx-briefcase text-2xl text-accent-cyan mt-1 flex-shrink-0'></i>
             <div>
               <h4 class="font-outfit font-bold text-navy-deep text-base mb-1">Professionalism</h4>
-              <p class="text-xs text-text-medium leading-relaxed">We deliver dependable services with accountability, transparency, and respect for legal and standards.</p>
+              <p class="text-xs text-text-medium leading-relaxed">We deliver dependable services with accountability,
+                transparency, and respect for legal and standards.</p>
             </div>
           </div>
 
-          <div class="value-item flex gap-4 bg-white p-5 rounded-sm border border-[#0b192c]/5 shadow-sm transition-all hover:border-accent-cyan/20">
+          <div
+            class="value-item flex gap-4 bg-white p-5 rounded-sm border border-[#0b192c]/5 shadow-sm transition-all hover:border-accent-cyan/20">
             <i class='bx bx-git-branch text-2xl text-accent-cyan mt-1 flex-shrink-0'></i>
             <div>
               <h4 class="font-outfit font-bold text-navy-deep text-base mb-1">Innovation</h4>
-              <p class="text-xs text-text-medium leading-relaxed">We continuously embrace advancements in forensic science and technology to provide high quality solutions.</p>
+              <p class="text-xs text-text-medium leading-relaxed">We continuously embrace advancements in forensic
+                science and technology to provide high quality solutions.</p>
             </div>
           </div>
 
@@ -210,35 +279,43 @@
   <!-- Vision & Mission Section -->
   <section class="py-24 bg-[#0b192c]/[0.02] border-y border-[#0b192c]/5">
     <div class="tracevia-container">
-      
+
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-        
+
         <!-- Vision Column -->
-        <div class="vision-box bg-white border border-[#0b192c]/5 rounded-md p-10 shadow-sm flex flex-col justify-start">
-          <div class="icon-circle w-14 h-14 bg-accent-cyan/10 rounded-full flex items-center justify-center text-3xl text-accent-cyan mb-6">
+        <div
+          class="vision-box bg-white border border-[#0b192c]/5 rounded-md p-10 shadow-sm flex flex-col justify-start">
+          <div
+            class="icon-circle w-14 h-14 bg-accent-cyan/10 rounded-full flex items-center justify-center text-3xl text-accent-cyan mb-6">
             <i class='bx bx-show'></i>
           </div>
           <h3 class="font-outfit text-3xl text-navy-deep font-extrabold mb-5">Our Vision</h3>
           <p class="text-base text-text-medium leading-relaxed">
-            To become one of India's most trusted and respected forensic science organisations by delivering innovative, reliable, and scientifically sound investigative solutions that promote justice, transparency, and accountability.
+            To become one of India's most trusted and respected forensic science organisations by delivering innovative,
+            reliable, and scientifically sound investigative solutions that promote justice, transparency, and
+            accountability.
           </p>
         </div>
 
         <!-- Mission Column -->
-        <div class="mission-box bg-white border border-[#0b192c]/5 rounded-md p-10 shadow-sm flex flex-col justify-start">
-          <div class="icon-circle w-14 h-14 bg-accent-cyan/10 rounded-full flex items-center justify-center text-3xl text-accent-cyan mb-6">
+        <div
+          class="mission-box bg-white border border-[#0b192c]/5 rounded-md p-10 shadow-sm flex flex-col justify-start">
+          <div
+            class="icon-circle w-14 h-14 bg-accent-cyan/10 rounded-full flex items-center justify-center text-3xl text-accent-cyan mb-6">
             <i class='bx bx-target-lock'></i>
           </div>
           <h3 class="font-outfit text-3xl text-navy-deep font-extrabold mb-5">Our Mission</h3>
-          
+
           <ul class="bullet-list-custom flex flex-col gap-4 text-sm text-text-medium">
             <li class="flex items-start gap-3">
               <i class='bx bx-check-circle check-bullet-icon text-xl text-accent-cyan mt-0.5'></i>
-              <span>To provide independent, evidence-based forensic and investigative services with the highest standards of accuracy and integrity.</span>
+              <span>To provide independent, evidence-based forensic and investigative services with the highest
+                standards of accuracy and integrity.</span>
             </li>
             <li class="flex items-start gap-3">
               <i class='bx bx-check-circle check-bullet-icon text-xl text-accent-cyan mt-0.5'></i>
-              <span>To assist clients in making informed decisions through scientific analysis and expert opinion.</span>
+              <span>To assist clients in making informed decisions through scientific analysis and expert
+                opinion.</span>
             </li>
             <li class="flex items-start gap-3">
               <i class='bx bx-check-circle check-bullet-icon text-xl text-accent-cyan mt-0.5'></i>
@@ -263,12 +340,13 @@
   <!-- Why Choose Us & Philosophy Section -->
   <section class="py-24 bg-white">
     <div class="tracevia-container grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-16 items-center">
-      
+
       <!-- Why Choose Us column -->
       <div class="why-choose-left">
-        <span class="sub-tag block font-outfit text-xs font-bold text-accent-cyan mb-2 tracking-widest uppercase">WHY TRACEVIA</span>
+        <span class="sub-tag block font-outfit text-xs font-bold text-accent-cyan mb-2 tracking-widest uppercase">WHY
+          TRACEVIA</span>
         <h2 class="font-outfit text-4xl text-navy-deep mb-8">Unparalleled Investigative Rigor</h2>
-        
+
         <ul class="bullet-list-custom flex flex-col gap-5 text-sm text-text-medium">
           <li class="flex items-start gap-4">
             <i class='bx bxs-badge-check text-2xl text-accent-cyan mt-0.5'></i>
@@ -299,16 +377,20 @@
 
       <!-- Philosophy Box Column -->
       <div class="philosophy-right">
-        <div class="cta-section relative bg-gradient-hero text-white p-10 rounded-md shadow-lg border border-accent-cyan/35 flex flex-col gap-6 relative overflow-hidden">
+        <div
+          class="cta-section relative bg-gradient-hero text-white p-10 rounded-md shadow-lg border border-accent-cyan/35 flex flex-col gap-6 relative overflow-hidden">
           <div class="cta-glow absolute top-[-50%] left-[-20%] w-[500px] h-[500px] pointer-events-none z-[1]"></div>
-          
+
           <div class="relative z-[2] flex flex-col gap-4">
             <span class="font-outfit text-xs font-bold text-accent-cyan uppercase tracking-wider">OUR PHILOSOPHY</span>
             <h3 class="font-outfit text-3xl font-black text-white italic leading-tight">
               "Truth leaves traces. We follow them."
             </h3>
             <p class="text-sm text-text-white-muted leading-relaxed">
-              Every fingerprint, every document, every financial transaction, every accident scene, and every digital record tells a story. At Tracevia Forensics Services Private Limited, our purpose is to uncover that story through the power of forensic science—transforming evidence into clarity, uncertainty into facts, and questions into answers.
+              Every fingerprint, every document, every financial transaction, every accident scene, and every digital
+              record tells a story. At Tracevia Forensics Services Private Limited, our purpose is to uncover that story
+              through the power of forensic science—transforming evidence into clarity, uncertainty into facts, and
+              questions into answers.
             </p>
           </div>
         </div>
@@ -321,7 +403,7 @@
   <section class="about-badges-section bg-navy-deep py-16 text-white border-t border-white/5">
     <div class="tracevia-container">
       <div class="badges-wrapper flex flex-wrap justify-around items-center gap-8">
-        
+
         <div class="badge-item flex items-center gap-3">
           <i class='bx bx-buildings badge-icon text-3xl text-accent-cyan'></i>
           <span class="font-outfit text-base font-semibold tracking-wide">ASTM Conformance</span>
@@ -348,20 +430,29 @@
 
   <!-- Footer -->
   <footer class="navy-footer bg-navy-deep text-white-muted pt-24 pb-8">
-    <div class="tracevia-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr] gap-12 border-b border-white/5 pb-12">
-      
+    <div
+      class="tracevia-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr] gap-12 border-b border-white/5 pb-12">
+
       <!-- Column 1: About -->
       <div class="footer-col footer-about flex flex-col gap-6">
         <div class="footer-logo">
-          <img src="assets/logo.jpg" alt="Tracevia Forensics Services Private Limited" class="logo-image-footer h-12 rounded border border-white/10 object-contain">
+          <img src="assets/logo.jpg" alt="Tracevia Forensics Services Private Limited"
+            class="logo-image-footer h-12 rounded border border-white/10 object-contain">
         </div>
         <p class="footer-desc text-sm leading-relaxed text-text-white-muted">
-          Providing scientifically rigorous, unbiased forensic investigations and analysis. Trusted by insurance providers, legal professionals, and the general public.
+          Providing scientifically rigorous, unbiased forensic investigations and analysis. Trusted by insurance
+          providers, legal professionals, and the general public.
         </p>
         <div class="social-links flex gap-4 text-xl">
-          <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/8 hover:bg-accent-cyan hover:text-navy-deep flex items-center justify-center text-white transition-all" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-          <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/8 hover:bg-accent-cyan hover:text-navy-deep flex items-center justify-center text-white transition-all" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
-          <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/8 hover:bg-accent-cyan hover:text-navy-deep flex items-center justify-center text-white transition-all" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-white/5 border border-white/8 hover:bg-accent-cyan hover:text-navy-deep flex items-center justify-center text-white transition-all"
+            aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-white/5 border border-white/8 hover:bg-accent-cyan hover:text-navy-deep flex items-center justify-center text-white transition-all"
+            aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-white/5 border border-white/8 hover:bg-accent-cyan hover:text-navy-deep flex items-center justify-center text-white transition-all"
+            aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
         </div>
       </div>
 
@@ -369,10 +460,14 @@
       <div class="footer-col">
         <h4 class="footer-title font-outfit text-white text-lg font-bold mb-6 relative">Quick Navigation</h4>
         <ul class="footer-links flex flex-col gap-3.5 text-sm">
-          <li><a href="index.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> Home Page</a></li>
-          <li><a href="about.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> About Us</a></li>
-          <li><a href="services.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> Our Services</a></li>
-          <li><a href="contact.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> Contact & Inquiries</a></li>
+          <li><a href="index.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i
+                class='bx bx-chevron-right'></i> Home Page</a></li>
+          <li><a href="about.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i
+                class='bx bx-chevron-right'></i> About Us</a></li>
+          <li><a href="services.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i
+                class='bx bx-chevron-right'></i> Our Services</a></li>
+          <li><a href="contact.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i
+                class='bx bx-chevron-right'></i> Contact & Inquiries</a></li>
         </ul>
       </div>
 
@@ -380,10 +475,18 @@
       <div class="footer-col">
         <h4 class="footer-title font-outfit text-white text-lg font-bold mb-6 relative">Our Services</h4>
         <ul class="footer-links flex flex-col gap-3.5 text-sm">
-          <li><a href="services/motor-property.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> Claim Investigation</a></li>
-          <li><a href="services/accident-reconstruction.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> Accident Reconstruction</a></li>
-          <li><a href="services/document-examination.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> Document Examination</a></li>
-          <li><a href="services/fingerprint-analysis.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> Fingerprint Disputes</a></li>
+          <li><a href="services/motor-property.html"
+              class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i>
+              Claim Investigation</a></li>
+          <li><a href="services/accident-reconstruction.html"
+              class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i>
+              Accident Reconstruction</a></li>
+          <li><a href="services/document-examination.html"
+              class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i>
+              Document Examination</a></li>
+          <li><a href="services/fingerprint-analysis.html"
+              class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i>
+              Fingerprint Disputes</a></li>
         </ul>
       </div>
 
@@ -395,14 +498,16 @@
             <i class='bx bx-phone text-accent-cyan text-2xl mt-1'></i>
             <div>
               <span class="detail-label block text-xs text-text-white-muted">Phone Support</span>
-              <a href="tel:+18005558722" class="detail-value text-white font-semibold hover:text-accent-cyan">+1 (800) 555-TRACE</a>
+              <a href="tel:+18005558722" class="detail-value text-white font-semibold hover:text-accent-cyan">+1 (800)
+                555-TRACE</a>
             </div>
           </li>
           <li class="flex gap-3">
             <i class='bx bx-envelope text-accent-cyan text-2xl mt-1'></i>
             <div>
               <span class="detail-label block text-xs text-text-white-muted">Email Us</span>
-              <a href="mailto:info@traceviaforensics.com" class="detail-value text-white font-semibold hover:text-accent-cyan">info@tracevia.com</a>
+              <a href="mailto:traceviaforensics@gmail.com"
+                class="detail-value text-white font-semibold hover:text-accent-cyan">traceviaforensics@gmail.com</a>
             </div>
           </li>
           <li class="flex gap-3">
@@ -418,8 +523,10 @@
     </div>
 
     <!-- Bottom footer -->
-    <div class="tracevia-container pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-text-white-muted">
-      <p>&copy; 2026 Tracevia Forensics Services Private Limited. All rights reserved. Under strict scientific guidelines.</p>
+    <div
+      class="tracevia-container pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-text-white-muted">
+      <p>&copy; 2026 Tracevia Forensics Services Private Limited. All rights reserved. Under strict scientific
+        guidelines.</p>
       <div class="footer-policy-links flex gap-6">
         <a href="#" class="hover:text-accent-cyan transition-all">Privacy Policy</a>
         <a href="#" class="hover:text-accent-cyan transition-all">Terms of Service</a>
@@ -430,12 +537,16 @@
   <!-- Scripts -->
   <script src="js/main.js"></script>
   <!-- Floating Action Button: File Case -->
-  <a href="contact.html" class="group fixed bottom-12 right-12 w-[72px] h-[72px] rounded-full bg-accent-cyan text-white shadow-xl hover:bg-[#00878e] hover:scale-110 active:scale-95 transition-all duration-200 flex items-center justify-center z-[999] cursor-pointer fab-btn-glow" aria-label="File a Case">
+  <a href="contact.html"
+    class="group fixed bottom-12 right-12 w-[72px] h-[72px] rounded-full bg-accent-cyan text-white shadow-xl hover:bg-[#00878e] hover:scale-110 active:scale-95 transition-all duration-200 flex items-center justify-center z-[999] cursor-pointer fab-btn-glow"
+    aria-label="File a Case">
     <i class='bx bx-folder-plus text-3xl transition-transform group-hover:rotate-12'></i>
-    <span class="absolute right-20 bg-navy-deep text-white text-xs font-semibold px-3.5 py-2.5 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none border border-white/10 translate-x-2 group-hover:translate-x-0">
+    <span
+      class="absolute right-20 bg-navy-deep text-white text-xs font-semibold px-3.5 py-2.5 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none border border-white/10 translate-x-2 group-hover:translate-x-0">
       File a Case
     </span>
   </a>
 
 </body>
+
 </html>
