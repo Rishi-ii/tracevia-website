@@ -555,7 +555,7 @@ h4 {
     margin-top: 8px !important;
   }
   
-  .nav-item-dropdown.mobile-dropdown-active .nav-dropdown-menu {
+  .nav-dropdown-wrapper.mobile-dropdown-active .nav-dropdown-menu {
     display: flex !important;
     flex-direction: column !important;
     gap: 4px !important;
