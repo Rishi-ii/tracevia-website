@@ -42,39 +42,15 @@
   --border-light: 1px solid rgba(11, 25, 44, 0.06);
 }
 
-/* Global Reset overrides */
-/* Responsive root font sizes for perfect resolution scaling */
+/* Global Reset overrides - Locked to standard web typography scales */
 html {
-  font-size: 16px; /* Base for mobile */
-}
-
-@media (min-width: 640px) {
-  html {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 18px; /* Laptop baseline (matching 1366x768) */
-  }
-}
-
-@media (min-width: 1280px) {
-  html {
-    font-size: 19.5px; /* Large Desktop */
-  }
-}
-
-@media (min-width: 1536px) {
-  html {
-    font-size: 21.5px; /* High-res 1080p monitor (matching 1920x1080) */
-  }
+  font-size: 16px !important; /* Locks base layout unit to industry standard 16px */
 }
 
 body {
   font-family: 'Inter', sans-serif;
-  font-size: 1rem; /* Base body text is now 18px */
+  font-size: 1rem !important; /* 16px */
+  line-height: 1.55 !important; /* Body text line-height ~1.5–1.6 */
   color: var(--text-dark);
   background: var(--bg-gradient-main);
   scroll-behavior: smooth;
@@ -83,10 +59,30 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Outfit', sans-serif;
-  font-weight: 700;
+  line-height: 1.25 !important; /* Heading line-height ~1.2–1.3 */
   color: var(--navy-deep);
   letter-spacing: -0.02em;
+  font-weight: 700;
 }
+
+/* Explicit standard web font sizes */
+h1 {
+  font-size: 2.5rem !important; /* 40px (H1 range: 36-48px) */
+}
+
+h2 {
+  font-size: 1.875rem !important; /* 30px (H2 range: 28-32px) */
+}
+
+h3 {
+  font-size: 1.375rem !important; /* 22px (H3 range: 20-24px) */
+}
+
+h4 {
+  font-size: 1.125rem !important; /* 18px (H4/labels range: 16-18px) */
+}
+
+
 
 
 .container {
