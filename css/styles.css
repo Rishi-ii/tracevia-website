@@ -43,8 +43,33 @@
 }
 
 /* Global Reset overrides */
+/* Responsive root font sizes for perfect resolution scaling */
 html {
-  font-size: 18px; /* Roots rem layout scaling all text up globally by 12.5% */
+  font-size: 16px; /* Base for mobile */
+}
+
+@media (min-width: 640px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px; /* Laptop baseline (matching 1366x768) */
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 19.5px; /* Large Desktop */
+  }
+}
+
+@media (min-width: 1536px) {
+  html {
+    font-size: 21.5px; /* High-res 1080p monitor (matching 1920x1080) */
+  }
 }
 
 body {
