@@ -54,7 +54,7 @@
   </script>
 
   <!-- Global Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css?v=1.0.8">
+  <link rel="stylesheet" href="css/styles.css?v=1.0.9">
 </head>
 <body class="bg-primary text-dark font-sans leading-relaxed">
 
@@ -74,10 +74,11 @@
         <a href="about.html" class="active font-outfit text-base font-semibold text-navy-medium hover:text-navy-deep no-underline transition-all relative">About Us</a>
         
         <!-- Services Dropdown -->
-        <div class="nav-dropdown-wrapper relative">
-          <a href="services.html" class="dropdown-trigger flex items-center gap-1 font-outfit text-base font-semibold text-text-medium hover:text-navy-deep no-underline transition-all cursor-pointer">
-            Services <i class='bx bx-chevron-down dropdown-arrow text-sm transition-all duration-200'></i>
-          </a>
+        <div class="nav-dropdown-wrapper relative flex items-center gap-1 md:flex-row flex-row">
+          <a href="services.html" class="font-outfit text-base font-semibold text-text-medium hover:text-navy-deep no-underline transition-all cursor-pointer">Services</a>
+          <button class="dropdown-trigger-icon bg-transparent border-none cursor-pointer p-0 text-text-medium hover:text-navy-deep transition-all flex items-center justify-center" aria-label="Toggle Services Menu">
+            <i class='bx bx-chevron-down dropdown-arrow text-sm transition-all duration-200'></i>
+          </button>
           <div class="nav-dropdown-menu absolute top-full left-1/2 -translate-x-1/2 translate-y-3 w-[270px] bg-white border border-[#0b192c]/5 rounded-sm shadow-lg flex flex-col py-3 opacity-0 invisible transition-all duration-300 pointer-events-none z-[1002]">
             <a href="services/motor-property.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-shield-quarter text-accent-cyan text-lg'></i> Motor & Property Claims</a>
             <a href="services/accident-reconstruction.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-car text-accent-cyan text-lg'></i> Accident Reconstruction</a>
