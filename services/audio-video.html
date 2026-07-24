@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio & Video Authentication | Tracevia Forensics</title>
+  <meta name="description" content="Digital media authentication, deepfake detection, voice comparison, CCTV enhancement, and signal integrity verification.">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  
+  <!-- Google Fonts & Boxicons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy-deep': '#0B192C',
+            'navy-medium': '#1E3047',
+            'navy-light': '#314E72',
+            'navy-glowing': '#4A6E9B',
+            'accent-cyan': '#00ADB5',
+            'accent-teal': '#08D9D6',
+            'accent-blue': '#0056B3',
+            'bg-primary': '#F4F6F9',
+            'bg-secondary': '#FFFFFF',
+            'bg-subtle': '#EAEFF5',
+            'text-dark': '#0F172A',
+            'text-medium': '#475569',
+            'text-light': '#94A3B8',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            outfit: ['Outfit', 'sans-serif'],
+          },
+          borderRadius: {
+            'sm': '8px',
+            'md': '16px',
+            'lg': '24px',
+          },
+          boxShadow: {
+            'sm': '0 4px 12px rgba(11, 25, 44, 0.03)',
+            'md': '0 12px 32px rgba(11, 25, 44, 0.06)',
+            'lg': '0 24px 64px rgba(11, 25, 44, 0.12)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Global Stylesheet -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-primary text-dark font-sans leading-relaxed">
+
+  <!-- Subtle Full-Page Background Watermark -->
+  <div class="fixed inset-0 z-[-1] pointer-events-none opacity-[0.08] bg-cover bg-center bg-no-repeat filter grayscale" style="background-image: url('../assets/audio_video.png');"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-bar"></div>
+
+  <!-- Header -->
+  <header class="glass-header w-full fixed top-0 left-0 z-[1000] border-b border-[#0b192c]/5 bg-white/85 backdrop-blur-md transition-all duration-300">
+    <div class="max-w-[1360px] mx-auto px-6 flex items-center justify-between h-20 transition-all duration-300 navbar-wrapper">
+      <a href="../index.html" class="logo flex items-center no-underline">
+        <img src="../assets/logo.jpg" alt="Tracevia Forensics Services Private Limited" class="logo-image h-[52px] rounded-sm border border-[#0b192c]/10 object-contain transition-all duration-300">
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links flex items-center gap-8 md:flex-row flex-col">
+        <a href="../index.html" class="font-outfit text-base font-semibold text-text-medium hover:text-navy-deep no-underline transition-all relative">Home</a>
+        <a href="../about.html" class="font-outfit text-base font-semibold text-text-medium hover:text-navy-deep no-underline transition-all relative">About Us</a>
+        
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown-wrapper relative">
+          <a href="../services.html" class="active dropdown-trigger flex items-center gap-1 font-outfit text-base font-semibold text-navy-medium hover:text-navy-deep no-underline transition-all cursor-pointer">
+            Services <i class='bx bx-chevron-down dropdown-arrow text-sm transition-all duration-200'></i>
+          </a>
+          <div class="nav-dropdown-menu absolute top-full left-1/2 -translate-x-1/2 translate-y-3 w-[270px] bg-white border border-[#0b192c]/5 rounded-sm shadow-lg flex flex-col py-3 opacity-0 invisible transition-all duration-300 pointer-events-none z-[1002]">
+            <a href="motor-property.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-shield-quarter text-accent-cyan text-lg'></i> Motor & Property Claims</a>
+            <a href="accident-reconstruction.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-car text-accent-cyan text-lg'></i> Accident Reconstruction</a>
+            <a href="document-examination.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-file-find text-accent-cyan text-lg'></i> Document Examination</a>
+            <a href="fingerprint-analysis.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-fingerprint text-accent-cyan text-lg'></i> Fingerprint Analysis</a>
+            <a href="audio-video.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-volume-low text-accent-cyan text-lg'></i> Audio Video Auth</a>
+            <a href="forensic-accounting.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-wallet text-accent-cyan text-lg'></i> Forensic Accounting</a>
+            <a href="crime-scene.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-search-alt text-accent-cyan text-lg'></i> Crime Scene Forensic</a>
+            <a href="forensic-education.html" class="font-outfit font-medium text-sm text-text-medium hover:text-navy-deep hover:bg-[#0b192c]/5 px-5 py-2.5 flex items-center gap-3 transition-all duration-200"><i class='bx bx-book-open text-accent-cyan text-lg'></i> Education & Training</a>
+          </div>
+        </div>
+
+        <a href="../contact.html" class="font-outfit text-base font-semibold text-text-medium hover:text-navy-deep no-underline transition-all relative">Inquiries & Contact</a>
+
+      </nav>
+
+      <!-- Mobile Toggle -->
+      <button class="mobile-toggle hidden bg-none border-none text-navy-deep text-3xl cursor-pointer transition-all z-[1001]" aria-label="Toggle Navigation">
+        <i class='bx bx-menu'></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Service Header Banner -->
+  <section class="services-banner relative h-80 flex items-center overflow-hidden bg-navy-deep p-0 mt-0 border-b border-accent-cyan/10">
+    <!-- Dark base overlay -->
+    <div class="banner-overlay absolute top-0 left-0 w-full h-full bg-gradient-to-r from-navy-deep via-navy-deep/95 to-navy-medium/85 z-[1]"></div>
+    
+    <!-- Creative Angled Image Reveal on Right Side -->
+    <div class="absolute top-0 right-0 w-1/2 h-full z-[2] overflow-hidden hidden md:block">
+      <!-- Angled gradient transition mask to prevent sharp contrast issues -->
+      <div class="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/45 to-transparent z-[2]" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);"></div>
+      <!-- Service Illustration with grayscale/contrast styling -->
+      <img src="../assets/audio_video.png" alt="Audio & Video Authentication" class="w-full h-full object-cover filter grayscale brightness-90 contrast-110" style="clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);">
+      <!-- Cyan mix-blend-color overlay mask for a high-tech corporate duotone feel -->
+      <div class="absolute inset-0 bg-accent-cyan/15 mix-blend-color z-[3]" style="clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);"></div>
+    </div>
+    
+    <div class="banner-grid-lines absolute top-0 left-0 w-full h-full z-[3]"></div>
+    
+    <!-- Content container -->
+    <div class="max-w-[1360px] mx-auto px-6 relative z-[4] w-full">
+      <div class="max-w-[720px] flex flex-col items-start">
+        <span class="banner-tagline inline-flex items-center gap-2 font-outfit text-sm font-bold uppercase text-accent-cyan tracking-widest bg-accent-cyan/10 px-4 py-1.5 rounded-full mb-3 shadow-sm border border-accent-cyan/20">
+          <i class='bx bx-check-shield'></i> TRACEVIA FORENSICS
+        </span>
+        <h1 class="banner-title font-outfit text-4xl md:text-[46px] font-black text-white leading-tight mt-2 drop-shadow-md tracking-tight">Audio & Video Authentication</h1>
+        <p class="banner-subtitle-tagline font-outfit text-base md:text-lg text-text-white-muted mt-3 leading-relaxed">Determining the Authenticity of Digital Evidence</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Portal Grid -->
+  <section class="services-portal-section py-16 bg-primary">
+    <div class="max-w-[1360px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-[2.2fr_1fr] gap-12">
+      
+      <!-- Left Column: Primary Content -->
+      <div class="portal-main-content flex flex-col gap-10">
+        
+        <!-- OVERVIEW CARD -->
+        <div class="portal-card bg-white border border-[#0b192c]/5 rounded-md p-10 shadow-sm scroll-mt-[110px]" id="overview-section">
+          <h2 class="portal-section-title font-outfit text-xl font-extrabold text-navy-deep flex items-center gap-4 mb-6">
+            OVERVIEW <span class="accent-line"></span>
+          </h2>
+          <div class="portal-content-body">
+            <p class="overview-text text-base text-text-medium leading-relaxed">
+              Digital recordings are increasingly relied upon as critical evidence in legal, corporate, and investigative matters. Our Audio and Video Authentication service uses advanced forensic tools and scientific examination techniques to verify the authenticity and integrity of digital evidence, detect manipulation, and deliver legally defensible reports that support confident decision-making.
+            </p>
+          </div>
+        </div>
+
+        <!-- OFFERINGS CARD -->
+        <div class="portal-card bg-white border border-[#0b192c]/5 rounded-md p-10 shadow-sm scroll-mt-[110px]" id="offerings-section">
+          <h2 class="portal-section-title font-outfit text-xl font-extrabold text-navy-deep flex items-center gap-4 mb-6">
+            Services <span class="accent-line"></span>
+          </h2>
+          <div class="portal-content-body">
+            <ul class="bullet-list-custom flex flex-col gap-4">
+              <li>
+                <i class='bx bx-check-circle check-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Audio Authentication</span>
+              </li>
+              <li>
+                <i class='bx bx-check-circle check-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Video Authentication</span>
+              </li>
+              <li>
+                <i class='bx bx-check-circle check-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>CCTV Footage Analysis</span>
+              </li>
+              <li>
+                <i class='bx bx-check-circle check-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Voice Comparison</span>
+              </li>
+              <li>
+                <i class='bx bx-check-circle check-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Speaker Identification</span>
+              </li>
+              <li>
+                <i class='bx bx-check-circle check-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Video Tampering Detection</span>
+              </li>
+              <li>
+                <i class='bx bx-check-circle check-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Deepfake Detection</span>
+              </li>
+              <li>
+                <i class='bx bx-check-circle check-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Image Authentication</span>
+              </li>
+              <li>
+                <i class='bx bx-check-circle check-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Timestamp Verification</span>
+              </li>
+              <li>
+                <i class='bx bx-check-circle check-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Enhancement of Poor-Quality Recordings</span>
+              </li>
+              <li>
+                <i class='bx bx-check-circle check-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Transcript Preparation</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PROCESS CARD -->
+        <div class="portal-card bg-white border border-[#0b192c]/5 rounded-md p-10 shadow-sm scroll-mt-[110px]" id="secondary-section">
+          <h2 class="portal-section-title font-outfit text-xl font-extrabold text-navy-deep flex items-center gap-4 mb-6">
+            Applications <span class="accent-line"></span>
+          </h2>
+          <div class="portal-content-body">
+            <ul class="bullet-list-custom flex flex-col gap-4">
+              <li>
+                <i class='bx bx-right-arrow-alt arrow-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Criminal investigations</span>
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt arrow-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Family disputes</span>
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt arrow-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Corporate fraud</span>
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt arrow-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Insurance investigations</span>
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt arrow-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Court proceedings</span>
+              </li>
+              <li>
+                <i class='bx bx-right-arrow-alt arrow-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Arbitration</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BENEFITS CARD -->
+        <div class="portal-card bg-white border border-[#0b192c]/5 rounded-md p-10 shadow-sm scroll-mt-[110px]" id="closing-section">
+          <h2 class="portal-section-title font-outfit text-xl font-extrabold text-navy-deep flex items-center gap-4 mb-6">
+            Deliverables & Benefits <span class="accent-line"></span>
+          </h2>
+          <div class="portal-content-body">
+            <ul class="bullet-list-custom flex flex-col gap-4">
+              <li>
+                <i class='bx bx-shield-plus shield-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Verification of metadata and signal consistency to expose deepfakes or edits.</span>
+              </li>
+              <li>
+                <i class='bx bx-shield-plus shield-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Advanced noise filtering to enhance speech intelligibility and capture critical words.</span>
+              </li>
+              <li>
+                <i class='bx bx-shield-plus shield-bullet-icon text-2xl text-accent-cyan flex-shrink-0'></i>
+                <span>Accurate audio/video transcripts backed by a certified court-admissible forensic examiner's report.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Action CTA Box -->
+        <div class="portal-cta-box flex flex-col sm:flex-row justify-between items-center bg-navy-deep text-white p-10 rounded-md shadow-md gap-5">
+          <div class="cta-left text-center sm:text-left">
+            <h3 class="text-white text-lg font-bold mb-1">Need analysis on a similar case?</h3>
+            <p class="text-xs text-text-white-muted">Submit details to initiate a secure database entry.</p>
+          </div>
+          <a href="../contact.html?service=Audio Video Authentication" class="btn btn-accent px-6 py-3.5 bg-accent-cyan hover:bg-[#00878e] rounded-full text-white flex items-center gap-2 shadow-sm font-semibold transition-all">
+            <i class='bx bx-send'></i> Request Analysis
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Sticky Sidebar -->
+      <div class="portal-sidebar-container relative">
+        <div class="portal-sidebar sticky top-[110px] flex flex-col gap-8">
+          
+          <!-- On This Page Nav -->
+          <div class="sidebar-block bg-white border border-[#0b192c]/5 rounded-md p-7 shadow-sm">
+            <h4 class="sidebar-title block font-outfit text-xs font-bold text-navy-light uppercase tracking-wider mb-4 pb-3 border-b border-[#0b192c]/5">On This Page</h4>
+            <ul class="sidebar-menu flex flex-col gap-3 font-semibold text-text-medium text-sm">
+              <li>
+                <a href="#overview-section" class="sidebar-link hover:text-accent-cyan hover:translate-x-1 flex items-center gap-1 transition-all">
+                  <i class='bx bx-chevron-right'></i> Overview
+                </a>
+              </li>
+              <li>
+                <a href="#offerings-section" class="sidebar-link hover:text-accent-cyan hover:translate-x-1 flex items-center gap-1 transition-all">
+                  <i class='bx bx-chevron-right'></i> Services
+                </a>
+              </li>
+              <li>
+                <a href="#secondary-section" class="sidebar-link hover:text-accent-cyan hover:translate-x-1 flex items-center gap-1 transition-all">
+                  <i class='bx bx-chevron-right'></i> Applications
+                </a>
+              </li>
+              <li>
+                <a href="#closing-section" class="sidebar-link hover:text-accent-cyan hover:translate-x-1 flex items-center gap-1 transition-all">
+                  <i class='bx bx-chevron-right'></i> Deliverables & Benefits
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Other Services selector -->
+          <div class="sidebar-block bg-white border border-[#0b192c]/5 rounded-md p-7 shadow-sm">
+            <h4 class="sidebar-title block font-outfit text-xs font-bold text-navy-light uppercase tracking-wider mb-4 pb-3 border-b border-[#0b192c]/5">Our Other Services</h4>
+            <ul class="services-list-menu flex flex-col gap-2 max-h-[320px] overflow-y-auto pr-1">
+              
+              <li>
+                <a href="motor-property.html" class="service-select-link flex items-center justify-between p-2.5 rounded-sm hover:bg-[#0b192c]/5 transition-all">
+                  <div class="link-left flex items-center gap-2.5">
+                    <i class="bx bx-shield-quarter text-navy-light text-lg"></i>
+                    <span class="text-xs font-bold text-text-medium">Motor & Property Claims</span>
+                  </div>
+                  <i class='bx bx-chevron-right arrow-indicator text-text-light opacity-0 transition-all'></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="accident-reconstruction.html" class="service-select-link flex items-center justify-between p-2.5 rounded-sm hover:bg-[#0b192c]/5 transition-all">
+                  <div class="link-left flex items-center gap-2.5">
+                    <i class="bx bx-car text-navy-light text-lg"></i>
+                    <span class="text-xs font-bold text-text-medium">Accident Reconstruction</span>
+                  </div>
+                  <i class='bx bx-chevron-right arrow-indicator text-text-light opacity-0 transition-all'></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="document-examination.html" class="service-select-link flex items-center justify-between p-2.5 rounded-sm hover:bg-[#0b192c]/5 transition-all">
+                  <div class="link-left flex items-center gap-2.5">
+                    <i class="bx bx-file-find text-navy-light text-lg"></i>
+                    <span class="text-xs font-bold text-text-medium">Document Examination</span>
+                  </div>
+                  <i class='bx bx-chevron-right arrow-indicator text-text-light opacity-0 transition-all'></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="fingerprint-analysis.html" class="service-select-link flex items-center justify-between p-2.5 rounded-sm hover:bg-[#0b192c]/5 transition-all">
+                  <div class="link-left flex items-center gap-2.5">
+                    <i class="bx bx-fingerprint text-navy-light text-lg"></i>
+                    <span class="text-xs font-bold text-text-medium">Fingerprint Analysis</span>
+                  </div>
+                  <i class='bx bx-chevron-right arrow-indicator text-text-light opacity-0 transition-all'></i>
+                </a>
+              </li>
+
+              <li class="active">
+                <a href="audio-video.html" class="service-select-link flex items-center justify-between p-2.5 rounded-sm hover:bg-[#0b192c]/5 bg-navy-deep text-white transition-all">
+                  <div class="link-left flex items-center gap-2.5">
+                    <i class="bx bx-volume-low text-accent-cyan text-lg"></i>
+                    <span class="text-xs font-bold text-white">Audio Video Auth</span>
+                  </div>
+                  <i class='bx bx-chevron-right arrow-indicator text-accent-cyan opacity-100 translate-x-0.5'></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="forensic-accounting.html" class="service-select-link flex items-center justify-between p-2.5 rounded-sm hover:bg-[#0b192c]/5 transition-all">
+                  <div class="link-left flex items-center gap-2.5">
+                    <i class="bx bx-wallet text-navy-light text-lg"></i>
+                    <span class="text-xs font-bold text-text-medium">Forensic Accounting</span>
+                  </div>
+                  <i class='bx bx-chevron-right arrow-indicator text-text-light opacity-0 transition-all'></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="crime-scene.html" class="service-select-link flex items-center justify-between p-2.5 rounded-sm hover:bg-[#0b192c]/5 transition-all">
+                  <div class="link-left flex items-center gap-2.5">
+                    <i class="bx bx-search-alt text-navy-light text-lg"></i>
+                    <span class="text-xs font-bold text-text-medium">Crime Scene Forensic</span>
+                  </div>
+                  <i class='bx bx-chevron-right arrow-indicator text-text-light opacity-0 transition-all'></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="forensic-education.html" class="service-select-link flex items-center justify-between p-2.5 rounded-sm hover:bg-[#0b192c]/5 transition-all">
+                  <div class="link-left flex items-center gap-2.5">
+                    <i class="bx bx-book-open text-navy-light text-lg"></i>
+                    <span class="text-xs font-bold text-text-medium">Education & Training</span>
+                  </div>
+                  <i class='bx bx-chevron-right arrow-indicator text-text-light opacity-0 transition-all'></i>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="navy-footer bg-navy-deep text-white-muted pt-24 pb-8">
+    <div class="max-w-[1360px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr] gap-12 border-b border-white/5 pb-12">
+      
+      <!-- Column 1: About -->
+      <div class="footer-col footer-about flex flex-col gap-6">
+        <div class="footer-logo">
+          <img src="../assets/logo.jpg" alt="Tracevia Forensics Services Private Limited" class="logo-image-footer h-12 rounded border border-white/10 object-contain">
+        </div>
+        <p class="footer-desc text-sm leading-relaxed text-text-white-muted">
+          Providing scientifically rigorous, unbiased forensic investigations and analysis. Trusted by insurance providers, legal professionals, and the general public.
+        </p>
+        <div class="social-links flex gap-4 text-xl">
+          <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/8 hover:bg-accent-cyan hover:text-navy-deep flex items-center justify-center text-white transition-all" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/8 hover:bg-accent-cyan hover:text-navy-deep flex items-center justify-center text-white transition-all" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/8 hover:bg-accent-cyan hover:text-navy-deep flex items-center justify-center text-white transition-all" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-title font-outfit text-white text-lg font-bold mb-6 relative">Quick Navigation</h4>
+        <ul class="footer-links flex flex-col gap-3.5 text-sm">
+          <li><a href="../index.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> Home Page</a></li>
+          <li><a href="../about.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> About Us</a></li>
+          <li><a href="../services.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> Our Services</a></li>
+          <li><a href="../contact.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> Contact & Inquiries</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Core Services -->
+      <div class="footer-col">
+        <h4 class="footer-title font-outfit text-white text-lg font-bold mb-6 relative">Our Services</h4>
+        <ul class="footer-links flex flex-col gap-3.5 text-sm">
+          <li><a href="motor-property.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> Claim Investigation</a></li>
+          <li><a href="accident-reconstruction.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> Accident Reconstruction</a></li>
+          <li><a href="document-examination.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> Document Examination</a></li>
+          <li><a href="fingerprint-analysis.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i> Fingerprint Disputes</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact info -->
+      <div class="footer-col">
+        <h4 class="footer-title font-outfit text-white text-lg font-bold mb-6 relative">Get in Touch</h4>
+        <ul class="contact-details flex flex-col gap-4 text-sm">
+          <li class="flex gap-3">
+            <i class='bx bx-phone text-accent-cyan text-2xl mt-1'></i>
+            <div>
+              <span class="detail-label block text-xs text-text-white-muted">Phone Support</span>
+              <a href="tel:+18005558722" class="detail-value text-white font-semibold hover:text-accent-cyan">+1 (800) 555-TRACE</a>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <i class='bx bx-envelope text-accent-cyan text-2xl mt-1'></i>
+            <div>
+              <span class="detail-label block text-xs text-text-white-muted">Email Us</span>
+              <a href="mailto:info@traceviaforensics.com" class="detail-value text-white font-semibold hover:text-accent-cyan">info@tracevia.com</a>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <i class='bx bx-map text-accent-cyan text-2xl mt-1'></i>
+            <div>
+              <span class="detail-label block text-xs text-text-white-muted">Head Office & Lab</span>
+              <span class="detail-value text-white font-semibold">700 Analysis Blvd, Suite 100, Tech City</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom footer -->
+    <div class="max-w-[1360px] mx-auto px-6 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-text-white-muted">
+      <p>&copy; 2026 Tracevia Forensics Services Private Limited. All rights reserved. Under strict scientific guidelines.</p>
+      <div class="footer-policy-links flex gap-6">
+        <a href="#" class="hover:text-accent-cyan transition-all">Privacy Policy</a>
+        <a href="#" class="hover:text-accent-cyan transition-all">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <!-- Floating Action Button: File Case -->
+  <a href="../contact.html" class="group fixed bottom-12 right-12 w-[72px] h-[72px] rounded-full bg-accent-cyan text-white shadow-xl hover:bg-[#00878e] hover:scale-110 active:scale-95 transition-all duration-200 flex items-center justify-center z-[999] cursor-pointer fab-btn-glow" aria-label="File a Case">
+    <i class='bx bx-folder-plus text-3xl transition-transform group-hover:rotate-12'></i>
+    <span class="absolute right-20 bg-navy-deep text-white text-xs font-semibold px-3.5 py-2.5 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none border border-white/10 translate-x-2 group-hover:translate-x-0">
+      File a Case
+    </span>
+  </a>
+
+</body>
+</html>
