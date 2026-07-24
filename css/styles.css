@@ -487,3 +487,27 @@ h4 {
   }
 }
 
+
+/* Standard centered container with responsive side padding */
+.tracevia-container {
+  width: 100% !important;
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+@media (min-width: 768px) {
+  .tracevia-container {
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tracevia-container {
+    padding-left: 64px !important;
+    padding-right: 64px !important;
+  }
+}
