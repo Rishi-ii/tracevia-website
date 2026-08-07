@@ -574,3 +574,98 @@ h4 {
     color: var(--text-dark) !important;
   }
 }
+
+/* Glassmorphism Styles for Director Cards and Modal */
+.director-glass-card {
+  background: rgba(255, 255, 255, 0.45) !important;
+  backdrop-filter: blur(16px) saturate(120%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(120%) !important;
+  border: 1px solid rgba(11, 25, 44, 0.08) !important;
+  box-shadow: 0 8px 32px 0 rgba(11, 25, 44, 0.04) !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer;
+}
+
+.director-glass-card:hover {
+  transform: translateY(-6px) scale(1.01) !important;
+  background: rgba(255, 255, 255, 0.6) !important;
+  border-color: rgba(0, 173, 181, 0.25) !important;
+  box-shadow: 0 20px 40px 0 rgba(11, 25, 44, 0.08), 0 0 0 4px rgba(0, 173, 181, 0.05) !important;
+}
+
+/* Modal Overlay */
+.director-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 25, 44, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  padding: 24px;
+}
+
+.director-modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Modal Box - Glassmorphism */
+.director-modal-box {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(24px) saturate(130%);
+  -webkit-backdrop-filter: blur(24px) saturate(130%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 24px 64px rgba(11, 25, 44, 0.15);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 800px;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  transform: scale(0.9);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 40px;
+  position: relative;
+}
+
+@media (max-width: 640px) {
+  .director-modal-box {
+    padding: 24px;
+  }
+}
+
+.director-modal-overlay.active .director-modal-box {
+  transform: scale(1);
+}
+
+.director-modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(11, 25, 44, 0.05);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--navy-deep);
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.director-modal-close-btn:hover {
+  background: rgba(11, 25, 44, 0.1);
+  transform: scale(1.05);
+}

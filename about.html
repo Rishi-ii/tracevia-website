@@ -58,7 +58,7 @@
   </script>
 
   <!-- Global Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css?v=1.1.1">
+  <link rel="stylesheet" href="css/styles.css?v=1.1.5">
 </head>
 
 <body class="bg-primary text-dark font-sans leading-relaxed">
@@ -122,8 +122,9 @@
         </div>
 
         <a href="contact.html"
-          class="font-outfit text-base font-semibold text-text-medium hover:text-navy-deep no-underline transition-all relative">Inquiries
-          & Contact</a>
+          class="btn btn-accent btn-nav-cta font-outfit font-semibold px-5 py-2.5 text-white bg-accent-cyan hover:bg-[#00878e] rounded-full flex items-center gap-2 shadow-sm transition-all duration-200">
+          Inquiries & Contact
+        </a>
 
       </nav>
 
@@ -399,6 +400,53 @@
     </div>
   </section>
 
+  <!-- Leadership / Our Directors Section -->
+  <section class="about-leadership-section py-20 bg-white border-t border-[#0b192c]/5">
+    <div class="tracevia-container">
+      
+      <!-- Section Title -->
+      <div class="section-title-wrapper text-center max-w-[600px] mx-auto mb-16 reveal-on-scroll">
+        <span class="section-tag inline-block font-outfit text-sm font-bold uppercase text-accent-cyan bg-accent-cyan/10 px-4 py-1.5 rounded-full mb-4 tracking-widest">Leadership</span>
+        <h2 class="section-title font-outfit text-4xl text-navy-deep mb-4">Our Directors</h2>
+        <p class="section-subtitle text-base text-text-medium leading-relaxed">
+          Guiding Tracevia Forensics with scientific precision, academic excellence, and extensive industry experience.
+        </p>
+      </div>
+
+      <!-- Directors Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+
+        <!-- Director 1 -->
+        <div class="director-card director-glass-card reveal-on-scroll scale-up flex flex-col sm:flex-row gap-6 items-start p-8 rounded-md" onclick="openDirectorModal('anamika')">
+          <img src="assets/director-anamika.jpg" alt="Dr. Das Anamika" class="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-2 border-accent-cyan/20 object-cover shadow-sm flex-shrink-0 mx-auto sm:mx-0">
+          <div class="director-info flex flex-col items-center sm:items-start text-center sm:text-left flex-grow">
+            <h3 class="font-outfit text-2xl font-bold text-navy-deep mb-1">Dr. Das Anamika</h3>
+            <span class="badge text-xs font-bold px-3 py-1 rounded-full bg-accent-cyan/10 text-accent-cyan tracking-wider uppercase inline-block mb-3">Director</span>
+            <p class="text-sm text-text-medium leading-relaxed mb-3">
+              Dr. Das Anamika is the Director of Tracevia Forensics Services Pvt. Ltd., providing strategic leadership in scientific research, forensic innovation, and quality-driven investigative practices. She is committed to advancing evidence-based forensic investigations...
+            </p>
+            <span class="text-accent-cyan text-sm font-bold flex items-center gap-1 hover:underline">Read full bio &rarr;</span>
+          </div>
+        </div>
+
+        <!-- Director 2 -->
+        <div class="director-card director-glass-card reveal-on-scroll scale-up reveal-delay-100 flex flex-col sm:flex-row gap-6 items-start p-8 rounded-md" onclick="openDirectorModal('mukul')">
+          <img src="assets/director-mukul.jpg" alt="Mr. Mukul Kumar" class="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-2 border-accent-cyan/20 object-cover shadow-sm flex-shrink-0 mx-auto sm:mx-0">
+          <div class="director-info flex flex-col items-center sm:items-start text-center sm:text-left flex-grow">
+            <h3 class="font-outfit text-2xl font-bold text-navy-deep mb-1">Mr. Mukul Kumar</h3>
+            <span class="badge text-xs font-bold px-3 py-1 rounded-full bg-accent-cyan/10 text-accent-cyan tracking-wider uppercase inline-block mb-3">Director</span>
+            <p class="text-sm text-text-medium leading-relaxed mb-3">
+              Mr. Mukul Kumar is the Director of Tracevia Forensics Services Pvt. Ltd., leading the organisation with a vision to deliver truth through scientific investigation, integrity, and evidence-based forensic analysis. He plays a pivotal role in driving...
+            </p>
+            <span class="text-accent-cyan text-sm font-bold flex items-center gap-1 hover:underline">Read full bio &rarr;</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
   <!-- Accreditations & Standards (Badges) -->
   <section class="about-badges-section bg-navy-deep py-16 text-white border-t border-white/5">
     <div class="tracevia-container">
@@ -440,8 +488,8 @@
             class="logo-image-footer h-12 rounded border border-white/10 object-contain">
         </div>
         <p class="footer-desc text-sm leading-relaxed text-text-white-muted">
-          Providing scientifically rigorous, unbiased forensic investigations and analysis. Trusted by insurance
-          providers, legal professionals, and the general public.
+          Delivering truth through science, precision, and integrity. Trusted forensic experts providing independent
+          investigations and evidence-based solutions across India.
         </p>
         <div class="social-links flex gap-4 text-xl">
           <a href="#"
@@ -498,8 +546,10 @@
             <i class='bx bx-phone text-accent-cyan text-2xl mt-1'></i>
             <div>
               <span class="detail-label block text-xs text-text-white-muted">Phone Support</span>
-              <a href="tel:+18005558722" class="detail-value text-white font-semibold hover:text-accent-cyan">+1 (800)
-                555-TRACE</a>
+              <a href="tel:+91-9999903390"
+                class="detail-value block text-white font-semibold hover:text-accent-cyan">+91-9999903390</a>
+              <a href="tel:+91-8958598829"
+                class="detail-value block text-white font-semibold hover:text-accent-cyan">+91-8958598829</a>
             </div>
           </li>
           <li class="flex gap-3">
@@ -514,7 +564,8 @@
             <i class='bx bx-map text-accent-cyan text-2xl mt-1'></i>
             <div>
               <span class="detail-label block text-xs text-text-white-muted">Head Office & Lab</span>
-              <span class="detail-value text-white font-semibold">700 Analysis Blvd, Suite 100, Tech City</span>
+              <span class="detail-value text-white font-semibold">I-1504, Samridhi Luxuria Avenue, Sector-150, Noida,
+                Uttar Pradesh, 201310</span>
             </div>
           </li>
         </ul>
@@ -539,13 +590,85 @@
   <!-- Floating Action Button: File Case -->
   <a href="contact.html"
     class="group fixed bottom-12 right-12 w-[72px] h-[72px] rounded-full bg-accent-cyan text-white shadow-xl hover:bg-[#00878e] hover:scale-110 active:scale-95 transition-all duration-200 flex items-center justify-center z-[999] cursor-pointer fab-btn-glow"
-    aria-label="File a Case">
+    aria-label="Contact Us">
     <i class='bx bx-folder-plus text-3xl transition-transform group-hover:rotate-12'></i>
     <span
       class="absolute right-20 bg-navy-deep text-white text-xs font-semibold px-3.5 py-2.5 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none border border-white/10 translate-x-2 group-hover:translate-x-0">
-      File a Case
+      Contact Us
     </span>
   </a>
+
+
+  <!-- Director Bio Modal Structure -->
+  <div id="director-modal" class="director-modal-overlay" onclick="closeDirectorModal(event)">
+    <div class="director-modal-box" onclick="event.stopPropagation()">
+      <button class="director-modal-close-btn" onclick="closeDirectorModal(event)" aria-label="Close modal">
+        <i class='bx bx-x'></i>
+      </button>
+      <div class="flex flex-col md:flex-row gap-8 items-start">
+        <img id="modal-director-photo" src="" alt="" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-accent-cyan/20 object-cover shadow-md mx-auto md:mx-0 flex-shrink-0">
+        <div class="flex-grow flex flex-col items-center md:items-start text-center md:text-left">
+          <h3 id="modal-director-name" class="font-outfit text-3xl font-bold text-navy-deep mb-1"></h3>
+          <span class="badge text-xs font-bold px-3 py-1 rounded-full bg-accent-cyan/10 text-accent-cyan tracking-wider uppercase inline-block mb-6">Director</span>
+          <div id="modal-director-bio" class="text-sm text-text-medium leading-relaxed flex flex-col gap-4">
+            <!-- Dynamic paragraphs injected here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const directorData = {
+      anamika: {
+        name: "Dr. Das Anamika",
+        photo: "assets/director-anamika.jpg",
+        bio: [
+          "Dr. Das Anamika is the Director of Tracevia Forensics Services Pvt. Ltd., providing strategic leadership in scientific research, forensic innovation, and quality-driven investigative practices. She is committed to advancing evidence-based forensic investigations while upholding the highest standards of scientific accuracy, professional integrity, and ethical practice.",
+          "She holds a Ph.D. in Forensic Sciences from Galgotias University and has a strong foundation in forensic research, scientific investigation, and interdisciplinary collaboration. Over the years, she has contributed to the advancement of forensic science through research, professional publications, and the application of scientific methodologies to complex forensic investigations.",
+          "Dr. Anamika specialises in Questioned Document Examination, Crime Scene Investigation, Arson and Accident Investigation, Insurance Fraud Investigation, Forensic Biology, Forensic Physics, and Forensic Photography. Her expertise combines scientific knowledge with practical investigative approaches to deliver accurate, objective, and legally defensible forensic solutions.",
+          "She has authored several research publications in reputed Scopus-indexed and peer-reviewed journals across diverse areas of forensic science. Her commitment to scientific excellence, innovation, and continuous professional development continues to strengthen Tracevia Forensics' mission of delivering reliable, technology-driven forensic solutions across India."
+        ]
+      },
+      mukul: {
+        name: "Mr. Mukul Kumar",
+        photo: "assets/director-mukul.jpg",
+        bio: [
+          "Mr. Mukul Kumar is the Director of Tracevia Forensics Services Pvt. Ltd., leading the organisation with a vision to deliver truth through scientific investigation, integrity, and evidence-based forensic analysis. He plays a pivotal role in driving the company's mission of providing reliable, unbiased, and court-admissible forensic solutions to clients across government agencies, insurance companies, corporates, legal professionals, and private organisations.",
+          "A certified forensic professional with over six years of experience, Mr. Kumar has worked extensively in the insurance and loss adjusting industry, as well as with government and non-government organisations across India. His expertise lies in conducting complex forensic investigations using scientific methodologies and internationally accepted investigative practices.",
+          "He holds a Master's degree in Forensic Science from the University of Lucknow and specialised in Fingerprint Examination and Questioned Document Analysis from A.I.H.S.D., Lucknow. His key areas of expertise include Fire Forensics, Accident Reconstruction, Fraud Investigation, Crime Scene Investigation, Fingerprint Examination, and Questioned Document Analysis.",
+          "Under his leadership, Tracevia Forensics Services has evolved into a technology-driven forensic organisation that combines scientific expertise, advanced investigative techniques, and ethical practices to deliver accurate, impartial, and legally defensible findings. His commitment to professional excellence and innovation continues to strengthen Tracevia's position as a trusted forensic partner across India."
+        ]
+      }
+    };
+
+    function openDirectorModal(key) {
+      const data = directorData[key];
+      if (!data) return;
+      
+      document.getElementById('modal-director-photo').src = data.photo;
+      document.getElementById('modal-director-photo').alt = data.name;
+      document.getElementById('modal-director-name').textContent = data.name;
+      
+      const bioContainer = document.getElementById('modal-director-bio');
+      bioContainer.innerHTML = '';
+      data.bio.forEach(para => {
+        const p = document.createElement('p');
+        p.textContent = para;
+        bioContainer.appendChild(p);
+      });
+      
+      const modal = document.getElementById('director-modal');
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDirectorModal(e) {
+      const modal = document.getElementById('director-modal');
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  </script>
 
 </body>
 
