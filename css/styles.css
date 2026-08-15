@@ -669,3 +669,9 @@ h4 {
   background: rgba(11, 25, 44, 0.1);
   transform: scale(1.05);
 }
+
+/* Custom positioning for Mr. Mukul's photo to prevent top head cropping */
+.object-position-mukul {
+  object-position: center 15% !important;
+}
+

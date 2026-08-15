@@ -58,7 +58,7 @@
   </script>
 
   <!-- Global Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css?v=1.1.5">
+  <link rel="stylesheet" href="css/styles.css?v=1.1.8">
 </head>
 
 <body class="bg-primary text-dark font-sans leading-relaxed">
@@ -418,7 +418,7 @@
 
         <!-- Director 1 -->
         <div class="director-card director-glass-card reveal-on-scroll scale-up flex flex-col sm:flex-row gap-6 items-start p-8 rounded-md" onclick="openDirectorModal('anamika')">
-          <img src="assets/director-anamika.jpg" alt="Dr. Das Anamika" class="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-2 border-accent-cyan/20 object-cover shadow-sm flex-shrink-0 mx-auto sm:mx-0">
+          <img src="assets/director-anamika.jpeg" alt="Dr. Das Anamika" class="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-2 border-accent-cyan/20 object-cover shadow-sm flex-shrink-0 mx-auto sm:mx-0">
           <div class="director-info flex flex-col items-center sm:items-start text-center sm:text-left flex-grow">
             <h3 class="font-outfit text-2xl font-bold text-navy-deep mb-1">Dr. Das Anamika</h3>
             <span class="badge text-xs font-bold px-3 py-1 rounded-full bg-accent-cyan/10 text-accent-cyan tracking-wider uppercase inline-block mb-3">Director</span>
@@ -431,7 +431,7 @@
 
         <!-- Director 2 -->
         <div class="director-card director-glass-card reveal-on-scroll scale-up reveal-delay-100 flex flex-col sm:flex-row gap-6 items-start p-8 rounded-md" onclick="openDirectorModal('mukul')">
-          <img src="assets/director-mukul.jpg" alt="Mr. Mukul Kumar" class="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-2 border-accent-cyan/20 object-cover shadow-sm flex-shrink-0 mx-auto sm:mx-0">
+          <img src="assets/director-mukul.jpeg" alt="Mr. Mukul Kumar" class="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-2 border-accent-cyan/20 object-cover object-position-mukul shadow-sm flex-shrink-0 mx-auto sm:mx-0">
           <div class="director-info flex flex-col items-center sm:items-start text-center sm:text-left flex-grow">
             <h3 class="font-outfit text-2xl font-bold text-navy-deep mb-1">Mr. Mukul Kumar</h3>
             <span class="badge text-xs font-bold px-3 py-1 rounded-full bg-accent-cyan/10 text-accent-cyan tracking-wider uppercase inline-block mb-3">Director</span>
@@ -477,113 +477,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="navy-footer bg-navy-deep text-white-muted pt-24 pb-8">
-    <div
-      class="tracevia-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr] gap-12 border-b border-white/5 pb-12">
-
-      <!-- Column 1: About -->
-      <div class="footer-col footer-about flex flex-col gap-6">
-        <div class="footer-logo">
-          <img src="assets/logo.jpg" alt="Tracevia Forensics Services Private Limited"
-            class="logo-image-footer h-12 rounded border border-white/10 object-contain">
-        </div>
-        <p class="footer-desc text-sm leading-relaxed text-text-white-muted">
-          Delivering truth through science, precision, and integrity. Trusted forensic experts providing independent
-          investigations and evidence-based solutions across India.
-        </p>
-        <div class="social-links flex gap-4 text-xl">
-          <a href="#"
-            class="w-10 h-10 rounded-full bg-white/5 border border-white/8 hover:bg-accent-cyan hover:text-navy-deep flex items-center justify-center text-white transition-all"
-            aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-          <a href="#"
-            class="w-10 h-10 rounded-full bg-white/5 border border-white/8 hover:bg-accent-cyan hover:text-navy-deep flex items-center justify-center text-white transition-all"
-            aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
-          <a href="#"
-            class="w-10 h-10 rounded-full bg-white/5 border border-white/8 hover:bg-accent-cyan hover:text-navy-deep flex items-center justify-center text-white transition-all"
-            aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
-        </div>
-      </div>
-
-      <!-- Column 2: Quick Links -->
-      <div class="footer-col">
-        <h4 class="footer-title font-outfit text-white text-lg font-bold mb-6 relative">Quick Navigation</h4>
-        <ul class="footer-links flex flex-col gap-3.5 text-sm">
-          <li><a href="index.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i
-                class='bx bx-chevron-right'></i> Home Page</a></li>
-          <li><a href="about.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i
-                class='bx bx-chevron-right'></i> About Us</a></li>
-          <li><a href="services.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i
-                class='bx bx-chevron-right'></i> Our Services</a></li>
-          <li><a href="contact.html" class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i
-                class='bx bx-chevron-right'></i> Contact & Inquiries</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 3: Core Services -->
-      <div class="footer-col">
-        <h4 class="footer-title font-outfit text-white text-lg font-bold mb-6 relative">Our Services</h4>
-        <ul class="footer-links flex flex-col gap-3.5 text-sm">
-          <li><a href="services/motor-property.html"
-              class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i>
-              Claim Investigation</a></li>
-          <li><a href="services/accident-reconstruction.html"
-              class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i>
-              Accident Reconstruction</a></li>
-          <li><a href="services/document-examination.html"
-              class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i>
-              Document Examination</a></li>
-          <li><a href="services/fingerprint-analysis.html"
-              class="hover:text-accent-cyan flex items-center gap-1 transition-all"><i class='bx bx-chevron-right'></i>
-              Fingerprint Disputes</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 4: Contact info -->
-      <div class="footer-col">
-        <h4 class="footer-title font-outfit text-white text-lg font-bold mb-6 relative">Get in Touch</h4>
-        <ul class="contact-details flex flex-col gap-4 text-sm">
-          <li class="flex gap-3">
-            <i class='bx bx-phone text-accent-cyan text-2xl mt-1'></i>
-            <div>
-              <span class="detail-label block text-xs text-text-white-muted">Phone Support</span>
-              <a href="tel:+91-9999903390"
-                class="detail-value block text-white font-semibold hover:text-accent-cyan">+91-9999903390</a>
-              <a href="tel:+91-8958598829"
-                class="detail-value block text-white font-semibold hover:text-accent-cyan">+91-8958598829</a>
-            </div>
-          </li>
-          <li class="flex gap-3">
-            <i class='bx bx-envelope text-accent-cyan text-2xl mt-1'></i>
-            <div>
-              <span class="detail-label block text-xs text-text-white-muted">Email Us</span>
-              <a href="mailto:traceviaforensics@gmail.com"
-                class="detail-value text-white font-semibold hover:text-accent-cyan">traceviaforensics@gmail.com</a>
-            </div>
-          </li>
-          <li class="flex gap-3">
-            <i class='bx bx-map text-accent-cyan text-2xl mt-1'></i>
-            <div>
-              <span class="detail-label block text-xs text-text-white-muted">Head Office & Lab</span>
-              <span class="detail-value text-white font-semibold">I-1504, Samridhi Luxuria Avenue, Sector-150, Noida,
-                Uttar Pradesh, 201310</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- Bottom footer -->
-    <div
-      class="tracevia-container pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-text-white-muted">
-      <p>&copy; 2026 Tracevia Forensics Services Private Limited. All rights reserved. Under strict scientific
-        guidelines.</p>
-      <div class="footer-policy-links flex gap-6">
-        <a href="#" class="hover:text-accent-cyan transition-all">Privacy Policy</a>
-        <a href="#" class="hover:text-accent-cyan transition-all">Terms of Service</a>
-      </div>
-    </div>
-  </footer>
+  <footer class="navy-footer bg-navy-deep text-white-muted pt-24 pb-8"></footer>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
@@ -622,7 +516,7 @@
     const directorData = {
       anamika: {
         name: "Dr. Das Anamika",
-        photo: "assets/director-anamika.jpg",
+        photo: "assets/director-anamika.jpeg",
         bio: [
           "Dr. Das Anamika is the Director of Tracevia Forensics Services Pvt. Ltd., providing strategic leadership in scientific research, forensic innovation, and quality-driven investigative practices. She is committed to advancing evidence-based forensic investigations while upholding the highest standards of scientific accuracy, professional integrity, and ethical practice.",
           "She holds a Ph.D. in Forensic Sciences from Galgotias University and has a strong foundation in forensic research, scientific investigation, and interdisciplinary collaboration. Over the years, she has contributed to the advancement of forensic science through research, professional publications, and the application of scientific methodologies to complex forensic investigations.",
@@ -632,7 +526,7 @@
       },
       mukul: {
         name: "Mr. Mukul Kumar",
-        photo: "assets/director-mukul.jpg",
+        photo: "assets/director-mukul.jpeg",
         bio: [
           "Mr. Mukul Kumar is the Director of Tracevia Forensics Services Pvt. Ltd., leading the organisation with a vision to deliver truth through scientific investigation, integrity, and evidence-based forensic analysis. He plays a pivotal role in driving the company's mission of providing reliable, unbiased, and court-admissible forensic solutions to clients across government agencies, insurance companies, corporates, legal professionals, and private organisations.",
           "A certified forensic professional with over six years of experience, Mr. Kumar has worked extensively in the insurance and loss adjusting industry, as well as with government and non-government organisations across India. His expertise lies in conducting complex forensic investigations using scientific methodologies and internationally accepted investigative practices.",
@@ -646,8 +540,16 @@
       const data = directorData[key];
       if (!data) return;
       
-      document.getElementById('modal-director-photo').src = data.photo;
-      document.getElementById('modal-director-photo').alt = data.name;
+      const photoEl = document.getElementById('modal-director-photo');
+      photoEl.src = data.photo;
+      photoEl.alt = data.name;
+      
+      if (key === 'mukul') {
+        photoEl.style.objectPosition = 'center 15%';
+      } else {
+        photoEl.style.objectPosition = 'center';
+      }
+      
       document.getElementById('modal-director-name').textContent = data.name;
       
       const bioContainer = document.getElementById('modal-director-bio');
